@@ -8,6 +8,8 @@ public class BasicVariables {
         int wholeNumber = 123;
         int otherNumber = 13;
 
+        int wholeNumber = 123;
+        int otherNumber = 13;
         short shortNumber = 123;
 
 
