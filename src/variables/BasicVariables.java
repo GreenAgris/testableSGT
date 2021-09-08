@@ -10,6 +10,9 @@ public class BasicVariables {
 
         short shortNumber = 123;
 
+        float complexNumber = 56.7f;
+
+        double complexDoubleNumber = 56.7d;
 
         boolean truthOrFalsehood; // what is the value?
 
@@ -18,7 +21,7 @@ public class BasicVariables {
         truthOrFalsehood = wholeNumber > otherNumber;
 
         System.out.println(" whole number result : " + wholeNumber);
-        System.out.println("Summation: " );
+        System.out.println("Summation: ");
         System.out.println(otherNumber + wholeNumber);
 
         System.out.println(truthOrFalsehood);
@@ -27,7 +30,6 @@ public class BasicVariables {
         System.out.println(" Some interesting things that we can try? : " + wholeNumber + otherNumber);
 
     }
-
 
 
 }
