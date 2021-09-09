@@ -9,5 +9,7 @@ This will be a testable code base where some introduction java code will live.
 Intro code:
   * Hello world + input args output initial 
   * Basic variables intro class
+  * Primitive variable data type handling
+  * Initial casting of variable types
 
 

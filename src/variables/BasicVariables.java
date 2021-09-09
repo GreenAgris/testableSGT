@@ -19,6 +19,9 @@ public class BasicVariables {
         var test234Name = shortNumber + wholeNumber;
         System.out.println(namedChar + test234Name); // %246
         System.out.println("" + namedChar + test234Name);
+
+        System.out.println(1 + 2 + "Hello"); // the output is 3Hello
+        System.out.println("Hello" + 1 + 2); // the output is Hello12
         System.out.println(namedChar + (complexNumber + complexDoubleNumber));
         //    System.out.println( truthOrFalsehood + isShortEqualToInt); // this makes no sense, don't do that :)
         System.out.println(" whole number result : " + wholeNumber);
