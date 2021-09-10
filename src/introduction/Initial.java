@@ -1,15 +1,15 @@
 package introduction;
 
 
+import variables.OnlineQuestion;
+
 public class Initial {
 
     public static void main(String args[]) {
         System.out.println("Hello, world, from Agris");
-        System.out.println("Hello, world, from Oksana");
 
-        for (String s: args) {
-            System.out.println(s);
-        }
+        OnlineQuestion someQuestion = new OnlineQuestion();
+        someQuestion.printOutContent();
 
     }
 
