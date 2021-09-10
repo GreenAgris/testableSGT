@@ -16,7 +16,7 @@ This will be a testable code base where some introduction java code will live. I
 <br> 
 <b>homework Description:</b>
 
-Create a new class (name as you think is the best). This class should hold 3 pre-defined variables
+Create a new class (name as you think is the best OR you can also use the ReferenceVariables class). This class should hold 3 pre-defined variables
 that are the values to convert metric to imperial measurements. This class should have a constructor(
 s) - generate them using InteliJ IDEA built in actions (right-click in class -> generate ->
 constructor -> select fields for constructor -> ok)
