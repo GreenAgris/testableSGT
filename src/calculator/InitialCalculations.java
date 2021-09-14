@@ -2,17 +2,31 @@ package calculator;
 
 public class InitialCalculations {
 
+
+
+    public static int ellipseArea(double a, double b) {
+        return (int) Math.round(Math.PI * a * b);
+    }
+
+
+    public static int surfaceAreaCyl(double h, double r) {
+        return (int) Math.round(2 * Math.PI * r * h + 2 * Math.PI * Math.pow(r, 2));
+    }
+
+    public static int cubeVolume (double a) {
+        return (int) Math.round (Math.pow (a,3));
+    }
+
+
     public static void main(String[] args) {
+        int surface = surfaceAreaCyl(45, 4);
+        System.out.println(surface);
 
-        System.out.println("A circles area with radius 2.3 is : " + Geometry.calculateCircleArea(2.3));
-        var temporaryRandomNumber = 5 * Math.random();
+        int area = ellipseArea(8, 15);
+        System.out.println(area);
 
-
-        System.out.println(
-            "A circles area with radius " + temporaryRandomNumber + " is : " + Geometry.calculateCircleArea(temporaryRandomNumber));
-
-        int result = (temporaryRandomNumber > 3) ? 14 : 5;
-        System.out.println("Result of the three operands action is: " + result);
+        int volume = cubeVolume(10);
+        System.out.println (volume);
     }
     // ROUND them to int values
     // Group 1 -   Elipse area
