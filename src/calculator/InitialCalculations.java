@@ -1,5 +1,7 @@
 package calculator;
 
+import util.BirdRandomizer;
+
 public class InitialCalculations {
 
     public static void main(String[] args) {
@@ -13,12 +15,20 @@ public class InitialCalculations {
 
         int result = (temporaryRandomNumber > 3) ? 14 : 5;
         System.out.println("Result of the three operands action is: " + result);
+
+        System.out.println("Surface : "+ surfaceAreaCyl(2.2,5.0));
+
+
+        System.out.println(BirdRandomizer.returnRandomBird());
     }
     // ROUND them to int values
-    // Group 1 -   Elipse area
-    // Group 2 - cube volume
-    // Group 3 -    sphere volume
-    // Group 4 - surface area of cilynder
+    // Group 1 - Ellipse area
+    // Group 2 - Cube volume
+    // Group 3 - Sphere volume
+    // Group 4 - Surface area of cylinder
 
+    public static int surfaceAreaCyl(double radius, double height) {
+        return (int) Math.round(2 * Math.PI * radius * height + 2 * Math.PI * Math.pow(radius, 2));
+    }
 
 }
