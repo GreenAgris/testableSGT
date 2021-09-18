@@ -10,6 +10,11 @@ public class Initial {
 
         OnlineQuestion someQuestion = new OnlineQuestion();
         someQuestion.printOutContent();
+        System.out.println("and Anna Beatrise");
+
+        for (String s: args) {
+            System.out.println(s);
+        }
 
     }
 
