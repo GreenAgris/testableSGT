@@ -40,8 +40,14 @@ This will be a testable code base where some introduction java code will live. I
    using switch structure. Print out some interesting bird facts about the detected bird. Add a
    fifth (or more) bird type and see how the detection changes. Check if you can optimise your
    if-else statements.
+4) In the created Questions APP : Create an Answers class, with following variables: text,
+   creationDateTime, user, likes, dislikes, acceptedAnswer, questionsIdentifier. Generate a constructor and a toString
+   method. Add a selection on Main Menu, to show a newly created Answer (for now just some default
+   hardcoded values just like the question).
 
-Exercises  :
+<br>
+
+<b>Exercises  : </b>
 
 * Create a function that calculates a Fibonacci number :
   fibonacci 1 = 1 ; fibonacci 2 = 1 ; fibonacci n = fibonacci n − 1 + fibonacci n − 2
