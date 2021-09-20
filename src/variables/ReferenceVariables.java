@@ -9,6 +9,15 @@ public class ReferenceVariables { //If needed, you can use this as the base clas
     private static double cmToFeet = 30.48;
     private static double yardsToMeters = 0.9144;
 
+
+    public static double getInchToCm() {
+        return inchToCm;
+    }
+
+    public static void setInchToCm(double inchToCm) {
+        ReferenceVariables.inchToCm = inchToCm;
+    }
+
     public static void main(String[] args) {
         int inch = 3; // for testing you can change the values as needed
         double cm = 7.62;

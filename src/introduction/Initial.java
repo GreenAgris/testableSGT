@@ -10,8 +10,7 @@ public class Initial {
 
         OnlineQuestion someQuestion = new OnlineQuestion();
         someQuestion.printOutContent();
-        System.out.println("and Anna Beatrise");
-
+        //was removed due to limited usability
         for (String s: args) {
             System.out.println(s);
         }

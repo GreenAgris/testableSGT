@@ -1,6 +1,7 @@
 package calculator;
 
 import util.BirdRandomizer;
+import variables.ReferenceVariables;
 
 public class InitialCalculations {
 
