@@ -10,6 +10,8 @@ public class InteractiveCalculator {
         scanner = new Scanner(System.in);
         welcome();
         //printOutMenu();
+        //statistics used
+        // project manager
     }
 
 

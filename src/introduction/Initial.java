@@ -10,6 +10,10 @@ public class Initial {
 
         OnlineQuestion someQuestion = new OnlineQuestion();
         someQuestion.printOutContent();
+        //was removed due to limited usability
+        for (String s: args) {
+            System.out.println(s);
+        }
 
     }
 
