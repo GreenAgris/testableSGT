@@ -14,6 +14,7 @@ This will be a testable code base where some introduction java code will live. I
 * Initial casting of variable types
 * Reference variables
 * IF - ELSE conditional statements
+* Arrays
 
 <br> 
 <b>homework Descriptions:</b>
@@ -74,6 +75,8 @@ Exercises  :
     * !(B && C) || !A
     * (A && C && !B) || (A && B && !C)
 * Using the drawings in image folder (Venn.png) write the corresponding boolean expressions.
+* Create a new class that holds a sudoku board. Fill it with a starting position for the game (can
+  be just taken from the internet).
 
 <b> Additional information sources </b> <br>
 
