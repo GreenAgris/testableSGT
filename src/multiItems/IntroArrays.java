@@ -6,6 +6,22 @@ public class IntroArrays {
 
     public static void main(String[] args) {
         int[ ] temperaturesArray = {16,20,21,23,23,12,76};
+        int[ ] otherArray = Arrays.copyOf(temperaturesArray, temperaturesArray.length+3);
+        int smallNumber = 13;
+        int bigNumber = 783433;
+
+        System.out.println(Arrays.toString(temperaturesArray));
+        System.out.println(Arrays.toString(otherArray));
+
+        smallNumber = bigNumber;
+        bigNumber = bigNumber - 10;
+        otherArray[3] = bigNumber;
+
+        System.out.println("-------------");
+        System.out.println(temperaturesArray);
+        System.out.println(otherArray);
+
+
         System.out.println(Arrays.toString(temperaturesArray));
         System.out.println("temperatures: length-   " + temperaturesArray.length);
 
