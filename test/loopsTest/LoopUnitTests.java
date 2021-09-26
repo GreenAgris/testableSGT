@@ -1,5 +1,4 @@
-package loops;
-
+package loopsTest;
 
 import static loops.LoopsExamples.findFirstPrimeNumber;
 import static loops.LoopsExamples.findLargest;
@@ -16,9 +15,7 @@ import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class LoopUnitTests {
-
-
+class LoopUnitTests {
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
 
     @BeforeEach
@@ -54,6 +51,8 @@ public class LoopUnitTests {
     @Test
     public void evenNumberMultiplyUnitTest() {
         assertEquals(240, multiplyOnlyEvenNumbers(new int[]{11, 12, 10, 13, 15, 17, 19, 2}),
+            "If passed a negative number sum did not work");
+        assertEquals(480, multiplyOnlyEvenNumbers(new int[]{11, 1,2, 10, 13, 8, 17, 19, 4}),
             "If passed a negative number sum did not work");
     }
 
