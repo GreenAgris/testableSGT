@@ -47,7 +47,7 @@ class LoopUnitTests {
     public void evenNumberMultiplyUnitTest() {
         assertEquals(240, LoopsExamples.multiplyOnlyEvenNumbers(new int[]{11, 12, 10, 13, 15, 17, 19, 2}),
             "If passed a negative number sum did not work");
-        assertEquals(480, LoopsExamples.multiplyOnlyEvenNumbers(new int[]{11, 1,2, 10, 13, 8, 17, 19, 4}),
+        assertEquals(640, LoopsExamples.multiplyOnlyEvenNumbers(new int[]{11, 1,2, 10, 13, 8, 17, 19, 4}),
             "If passed a negative number sum did not work");
     }
 
