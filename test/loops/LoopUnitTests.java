@@ -18,7 +18,6 @@ import org.junit.jupiter.api.Test;
 
 public class LoopUnitTests {
 
-
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
 
     @BeforeEach
@@ -55,6 +54,8 @@ public class LoopUnitTests {
     public void evenNumberMultiplyUnitTest() {
         assertEquals(240, multiplyOnlyEvenNumbers(new int[]{11, 12, 10, 13, 15, 17, 19, 2}),
             "If passed a negative number sum did not work");
+        assertEquals(640, LoopsExamples.multiplyOnlyEvenNumbers(new int[]{11, 1,2, 10, 13, 8, 17, 19, 4}),
+            "If passed a negative number sum did not work");
     }
 
     @Test
@@ -73,21 +74,21 @@ public class LoopUnitTests {
     @Test
     public void testMultiplicationTables() {
         printOutCalculationTable(6);
-        assertEquals("1   2   3   4   5   6\n"
-            + "   2   4   6   8  10  12\n"
-            + "   3   6   9  12  15  18\n"
-            + "   4   8  12  16  20  24\n"
-            + "   5  10  15  20  25  30\n"
-            + "   6  12  18  24  30  36", outputStreamCaptor.toString().trim()
+        assertEquals(String.format("1   2   3   4   5   6%n"
+            + "   2   4   6   8  10  12%n"
+            + "   3   6   9  12  15  18%n"
+            + "   4   8  12  16  20  24%n"
+            + "   5  10  15  20  25  30%n"
+            + "   6  12  18  24  30  36"), outputStreamCaptor.toString().trim()
         );
     }
 
     @Test
     public void testSmallMultiplicationTables() {
         printOutCalculationTable(3);
-        assertEquals("1   2   3\n"
-            + "   2   4   6\n"
-            + "   3   6   9", outputStreamCaptor.toString().trim()
+        assertEquals(String.format("1   2   3%n"
+            + "   2   4   6%n"
+            + "   3   6   9"), outputStreamCaptor.toString().trim()
         );
     }
 
@@ -96,10 +97,10 @@ public class LoopUnitTests {
     public void testSmallMultiplicationAdvancedTables() {
 
         printOutCalculationTable(6, 9);
-        assertEquals("36  42  48  54\n"
-            + "  42  49  56  63\n"
-            + "  48  56  64  72\n"
-            + "  54  63  72  81", outputStreamCaptor.toString().trim()
+        assertEquals(String.format("36  42  48  54%n"
+            + "  42  49  56  63%n"
+            + "  48  56  64  72%n"
+            + "  54  63  72  81"), outputStreamCaptor.toString().trim()
         );
 
     }
@@ -108,11 +109,11 @@ public class LoopUnitTests {
     public void testMultiplicationAdvancedTables() {
 
         printOutCalculationTable(9, 13);
-        assertEquals("81  90  99 108 117\n"
-            + "  90 100 110 120 130\n"
-            + "  99 110 121 132 143\n"
-            + " 108 120 132 144 156\n"
-            + " 117 130 143 156 169", outputStreamCaptor.toString().trim()
+        assertEquals(String.format("81  90  99 108 117%n"
+            + "  90 100 110 120 130%n"
+            + "  99 110 121 132 143%n"
+            + " 108 120 132 144 156%n"
+            + " 117 130 143 156 169"), outputStreamCaptor.toString().trim()
         );
 
     }
