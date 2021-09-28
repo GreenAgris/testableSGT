@@ -2,16 +2,24 @@ package loops;
 
 public class LoopsExamples {
 
-    int[] intArray = {16, 20, 21, 23, 23, 12, 71};
-    String[] exampleText = new String[]{"seastar", "Patrick", "Patrick seastar", "Omnitricks", "Omnibus", "Stellaris"};
+    static int[] intArray = {16, 20, 21, 23, 23, 12, 71};
+
+
+    static String[] exampleText = new String[]{"seastar", "Patrick", "Patrick seastar", "Omnitricks", "Omnibus", "Stellaris"};
 
     public static void main(String[] args) {
+        System.out.println("Final result: " + sumInt(intArray));
 
     }
-
     public static int sumInt(int[] input) {
-        return -1;
+        int sumOfArray = 0;
+        for (int element : input) {
+            sumOfArray += element;
+            System.out.println("Current sum : " + sumOfArray);
+        }
+        return sumOfArray;
     }
+
 
     public static int findLargest(int[] input) {
         return -1;
