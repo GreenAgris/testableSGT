@@ -58,6 +58,18 @@ This will be a testable code base where some introduction java code will live. I
    class "LoopsSecondExamples" named isStringPalindrome(String input) that can determine if a String
    is a palindrome. (Test values like "otto" and "palindromeemordnilap")
 8) Write a triangular multiplication printing function.
+9) Write a "search answers" QuestionApp function, that takes a string values from user input and
+   goes through all of the questions and in each answer text checks if the searched string is
+   contained. The function then returns an array or a string with the found answer texts (as you
+   choose).
+10) Write a histogram (vertical) based on the following approach: The incoming data should be
+    organized as an array of numbers. Convert the numbers in array to the percentages, by summing
+    all the values in the array and for each element in array setting a new value as ({value of
+    element} / {total sum of all elements})*100 . Set up a description of what is shown and one of
+    the axis as the first line(s).For each element of the input array, print out the index of the
+    element and corresponding number of characters representing the percentage value. The output
+    values showing percentages are consistent with the first line printed axis values. For
+    convinience the percentage numbers should be rounded to whole numbers.
 
 Exercises  :
 
