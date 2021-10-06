@@ -50,6 +50,26 @@ This will be a testable code base where some introduction java code will live. I
    On default (not defined question number) give information to user that the question was not found
    and return to the main menu. Update, if needed, Answer and Question classes with getter/setter
    methods for any internal variables you want to access individually.
+6) Within package loops, find the file LoopsExamples. Fill in the logic of the already defined
+   functions there, based on their names. To double-check your results you can run the tests of the
+   class. They should show green if the function is implemented correctly (based on the names of the
+   tests).
+7) A word is a palindrome if it can be read the same both forward and backward. Create a function in
+   class "LoopsSecondExamples" named isStringPalindrome(String input) that can determine if a String
+   is a palindrome. (Test values like "otto" and "palindromeemordnilap")
+8) Write a triangular multiplication printing function.
+9) Write a "search answers" QuestionApp function, that takes a string values from user input and
+   goes through all of the questions and in each answer text checks if the searched string is
+   contained. The function then returns an array or a string with the found answer texts (as you
+   choose).
+10) Write a histogram (vertical) based on the following approach: The incoming data should be
+    organized as an array of numbers. Convert the numbers in array to the percentages, by summing
+    all the values in the array and for each element in array setting a new value as ({value of
+    element} / {total sum of all elements})*100 . Set up a description of what is shown and one of
+    the axis as the first line(s).For each element of the input array, print out the index of the
+    element and corresponding number of characters representing the percentage value. The output
+    values showing percentages are consistent with the first line printed axis values. For
+    convinience the percentage numbers should be rounded to whole numbers.
 
 Exercises  :
 
