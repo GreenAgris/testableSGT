@@ -10,6 +10,9 @@ public class StringFormatting {
 
     public static final char piChar = '\u03C0';
 
+
+
+
     public static void main(String[] args) {
         romanAlphabetPrint();
         asciiPrint();
@@ -94,9 +97,7 @@ public class StringFormatting {
 
         // form presentation    if(bankIBAN.matches(regexPattern))
         return input.matches("[a-zA-Z0-9_āī]+s$");
-
     }
-
 
     public static boolean isLatvianFemaleName(String input) {
         return input.matches("[a-zA-Z0-9_āī]+[ae]$");
