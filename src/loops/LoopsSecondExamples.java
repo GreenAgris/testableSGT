@@ -1,5 +1,6 @@
 package loops;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class LoopsSecondExamples {
@@ -11,6 +12,7 @@ public class LoopsSecondExamples {
         System.out.println(Arrays.toString(sortBubble(smallArray)));
 
         findFibonacciNumbers(150);
+        myFindFibonacci(150);
     }
 
     // n = n-1 + n-2
@@ -33,6 +35,22 @@ public class LoopsSecondExamples {
             second = active;
         }
         System.out.println(output);
+    }
+
+    public static void myFindFibonacci(int max) {
+        ArrayList<String> listofFibNr = new ArrayList<String>();
+        int first = 1;
+        listofFibNr.add(String.valueOf(first));
+        int second = 1;
+        int active = 1;
+        while (active < max) {
+            listofFibNr.add(String.valueOf(active));
+            active = first + second;
+            first = second;
+            second = active;
+
+        }
+        System.out.println(listofFibNr);
     }
 
     //Bubble sort
@@ -67,5 +85,6 @@ public class LoopsSecondExamples {
         }
         return placeholder;
     }
+
 
 }

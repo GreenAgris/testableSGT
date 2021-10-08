@@ -73,3 +73,54 @@ public class ReferenceVariables { //If needed, you can use this as the base clas
         return yards / yardsToMeters;
     }
 }
+
+//my solution:
+//package variables;
+//
+//public class ReferenceVariables { //If needed, you can use this as the base class for Homework
+//    public double centimeters;
+//    public double inch;
+//    public double feet;
+//    public double yards;
+//
+//    public ReferenceVariables(double centimeters, double inch, double feet, double yards) {
+//        this.centimeters = centimeters;
+//        this.inch = inch;
+//        this.feet = feet;
+//        this.yards = yards;
+//    }
+//
+//    public ReferenceVariables() {
+//    }
+//
+//    public void convertToInches(double centimeters) {
+//        this.inch = centimeters / 2.54D;
+//        System.out.println(centimeters + " cm = " + this.inch + " in");
+//    }
+//
+//    public void convertToFeet(double centimeters) {
+//        this.feet = centimeters / 30.48D;
+//        System.out.println(centimeters + " cm = " + this.feet + " ft");
+//    }
+//
+//    public void convertToYards(double centimeters) {
+//        this.yards = centimeters / 91.44D;
+//        System.out.println(centimeters + " cm = " + this.yards + " yd");
+//    }
+//
+//    public void convertToAll(double centimeters) {
+//        this.convertToInches(centimeters);
+//        this.convertToFeet(centimeters);
+//        this.convertToYards(centimeters);
+//    }
+//
+//    public void convertToImperical(double centimeters) {
+//        double remainigcm = 0.0D;
+//        remainigcm = centimeters % 91.44D;
+//        this.yards = (centimeters - remainigcm) / 91.44D;
+//        this.feet = (remainigcm - remainigcm % 30.48D) / 30.48D;
+//        remainigcm /= 30.48D;
+//        this.inch = (double)Math.round(remainigcm / 2.54D);
+//        System.out.println(centimeters + " cm = " + this.yards + " yd + " + this.feet + " ft + " + this.inch + " in. ");
+//    }
+//}
