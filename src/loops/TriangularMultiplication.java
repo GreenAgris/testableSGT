@@ -13,9 +13,9 @@ public class TriangularMultiplication {
     //System.out.printf("%4d",number); will come in handy here - it formats more neatly and does not insert a new line
 
     public static void printOutTriangleCalculationTable(int minNumber, int maxNumber) {
-        for ( int i = minNumber; i <= maxNumber; i++ ) {
-            for ( int j = minNumber; j <= i; j++ ) {
-                System.out.format("%4d", i * j);
+        for ( int i = minNumber; i <= maxNumber; i++ ) { //for all numbers in range
+            for ( int j = minNumber; j <= i; j++ ) { //only till as many times as large taken number is
+                System.out.format("%4d", i * j); // multiplication in table format
             }
             System.out.println();
         }
