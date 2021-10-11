@@ -11,8 +11,6 @@ public class StringFormatting {
     public static final char piChar = '\u03C0';
 
 
-
-
     public static void main(String[] args) {
         romanAlphabetPrint();
         asciiPrint();
@@ -35,7 +33,6 @@ public class StringFormatting {
         String ultimatePanagram = "The beige hue on the waters of the loch impressed all, including the French queen, before she heard that symphony again, just as young Arthur wanted.";
 
 
-
         System.out.println(shortText.length());//prints out the number of characters in the given string (spaces are characters)
         System.out.println(shortText.charAt(1)); // just as in any array - programmers start counting from 0, so here we print out " "
 
@@ -44,27 +41,27 @@ public class StringFormatting {
         System.out.println(testable.equalsIgnoreCase(bigTestable));
         double testDouble = 123456789.123456789;
         System.out.println(String.format("Be careful with large decimal numbers,"
-            + " since the precision is still limited : %f , %.2f, %.16f", testDouble, testDouble, testDouble));
+                + " since the precision is still limited : %f , %.2f, %.16f", testDouble, testDouble, testDouble));
 
         String[] names = {"Jānis", "Otto", "Kaspars", "Ieva", "Laima", "Anna"};
 
-        for (String test : names) {
+        for ( String test : names ) {
             System.out.println("Is " + test + " male name: " + isLatvianMaleName(test));
 
             System.out.println(String.format("Is %s female name: %b", test, isLatvianFemaleName(test)));
         }
 
         String testText =
-            "Regular expressions originated in 1951, when mathematician Stephen Cole Kleene described regular"
-                + " languages using his mathematical notation called regular events. These arose in theoretical "
-                + "computer science, in the subfields of automata theory (models of computation) and the description "
-                + "and classification of "
-                + "formal languages. Other early implementations of pattern matching include the SNOBOL language,"
-                + " which did not use regular expressions, but instead its own pattern matching constructs."
-                + "Regular expressions entered popular use from 1968 in two uses: pattern matching in a text editor[6]"
-                + " and lexical analysis in a compiler.[7] Among the first appearances of regular expressions in program "
-                + "form was when Ken Thompson built Kleene's notation into the editor QED as a means"
-                + " to match patterns in text files.";
+                "Regular expressions originated in 1951, when mathematician Stephen Cole Kleene described regular"
+                        + " languages using his mathematical notation called regular events. These arose in theoretical "
+                        + "computer science, in the subfields of automata theory (models of computation) and the description "
+                        + "and classification of "
+                        + "formal languages. Other early implementations of pattern matching include the SNOBOL language,"
+                        + " which did not use regular expressions, but instead its own pattern matching constructs."
+                        + "Regular expressions entered popular use from 1968 in two uses: pattern matching in a text editor[6]"
+                        + " and lexical analysis in a compiler.[7] Among the first appearances of regular expressions in program "
+                        + "form was when Ken Thompson built Kleene's notation into the editor QED as a means"
+                        + " to match patterns in text files.";
 
         System.out.println("Test text has words: " + howManyWordsAreGiven(testText));
         System.out.println("2Test text has words: " + howManyWordsAreGiven2(testText));
@@ -76,14 +73,14 @@ public class StringFormatting {
 
     public static void romanAlphabetPrint() {
         System.out.print("Roman alphabet: ");
-        for (char c = 'A'; c <= 'Z'; c++) {
+        for ( char c = 'A'; c <= 'Z'; c++ ) {
             System.out.print(c);
         }
         System.out.println();
     }
 
     public static void asciiPrint() {
-        for (char c = 'A'; c <= 'z'; c++) {
+        for ( char c = 'A'; c <= 'z'; c++ ) {
             System.out.print(c);
         }
         System.out.println();
@@ -118,15 +115,36 @@ public class StringFormatting {
         return arrayOfStrings.length - 1;
     }
 
-    public static int howManySpecificWordsAreGiven(String input, String searchable) {
-        int count = 0;
-        Pattern p = Pattern.compile(searchable);
-        Matcher m = p.matcher(input);
-        while (m.find()) {
-            count++;
+    int howManySpecificWordsAreGiven(String input) {
+
+        int counter = 0;
+
+        Pattern pattern = Pattern.compile("the");
+        Matcher match = pattern.matcher(input);
+
+        while (match.find()) {
+            counter++;
         }
-        return count;
+
+        return counter;
+
     }
+
+    int howManySpecificWordsAre(String input, String searchable) {
+
+        int counter = 0;
+
+        Pattern pattern = Pattern.compile(searchable);
+        Matcher match = pattern.matcher(input);
+
+        while (match.find()) {
+            counter++;
+        }
+
+        return counter;
+
+    }
+
 
     public static int howManySpecificWordsAreGiven2(String input, String searchable) {
         String[] arrayOfStrings = input.split(searchable);
@@ -137,8 +155,8 @@ public class StringFormatting {
 
         System.out.println(String.format("Most know %c as %.3f", piChar, Math.PI));
         System.out.println(String.format(
-            "But since %c is a mathematical constant that is actually not a whole number, it has unending digits after the decimal point,since it is not practical to use an unending number, the calculations usually use the value as %f .",
-            piChar, Math.PI));
+                "But since %c is a mathematical constant that is actually not a whole number, it has unending digits after the decimal point,since it is not practical to use an unending number, the calculations usually use the value as %f .",
+                piChar, Math.PI));
     }
 
 
