@@ -115,7 +115,7 @@ public class StringFormatting {
         return arrayOfStrings.length - 1;
     }
 
-    int howManySpecificWordsAreGiven(String input) {
+    public static int howManySpecificTheWordsAreGiven(String input, String searchable) {
 
         int counter = 0;
 
@@ -130,7 +130,7 @@ public class StringFormatting {
 
     }
 
-    int howManySpecificWordsAre(String input, String searchable) {
+    public static int howManySpecificWordsAreGiven(String input, String searchable) {
 
         int counter = 0;
 
