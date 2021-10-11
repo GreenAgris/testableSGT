@@ -9,4 +9,9 @@ public class Geometry {
         return Math.PI * pow(radius, 2.0);
     }
 
+
+    // V = (4/3)πr3
+    public static int calculateSphereVolume(int radius) {
+        return (int) (Math.PI * pow(radius, 3) * 4 / 3);
+    }
 }
