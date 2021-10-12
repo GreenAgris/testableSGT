@@ -2,6 +2,13 @@ package conditionals;
 
 import java.util.Scanner;
 
+/*Create a game where the computer selects randomly a number in some range (0-100 for example) and you need to guess it.
+ Using only if statements (no loops) create game that allows guessing until you manage to find the number.
+ To allow for better guessing experience, let the user know if the guess was correct, and
+ if the guess was larger or smaller than the thought of number, in case the number was not guessed correctly.
+ For more of a challenge: count how many times the user tried to guess the number and show it at the end.
+ */
+
 public class NumberGuessingGame {
 
     public static Scanner scanner;

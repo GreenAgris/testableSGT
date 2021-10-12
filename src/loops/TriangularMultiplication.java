@@ -27,3 +27,45 @@ public class TriangularMultiplication {
 
 
 }
+//1
+//2
+//3
+//4
+//5
+//6
+//7
+//8
+//9
+//10
+//11
+//12
+//13
+//14
+//15
+//16
+//17
+//18
+//19
+//20
+//21
+//    float a[n], s = 0;
+//    int i = 0;
+//
+//    printf("vvedite elementi massiva\n");
+//
+//    for (i=0;i<n;i++)
+//        scanf("%f", &a[i]);
+//
+//    for(i = 0; i < n; ++i)
+//        printf("%f ", a[i]);
+//    printf("\n");
+//
+//    for(i = 0; i < n; ++i)
+//        s+= a[i];
+//    printf("summa: %f\n", s);
+//
+//    for(i = 0; i < n; ++i)
+//        a[i] /= s;
+//
+//    for(i = 0; i < n; ++i)
+//        printf("%f ", a[i]);
