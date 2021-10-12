@@ -19,7 +19,8 @@ public class LoopsExamples {
         System.out.println("");
         System.out.println(findSomethingInText("Omni", exampleText));
         System.out.println("First prime number in array or -1: " + findFirstPrimeNumber(intArray));
-           }
+
+    }
 
     public static int sumInt(int[] input) {
         int sumOfArray = 0;
