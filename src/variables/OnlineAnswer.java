@@ -17,6 +17,12 @@ public class OnlineAnswer {
         this.text = text;
     }
 
+    public OnlineAnswer(String userName,int date) {
+        //unix timestamp - date and
+        dateEdited = "2021-10-11";
+        text = " ";
+    //date calculation
+    }
     public OnlineAnswer(String text, String userName) {
         this.text = text;
         this.userName = userName;
