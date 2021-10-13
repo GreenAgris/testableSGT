@@ -62,7 +62,5 @@ public class StringFormattingExamplesTime {
         System.out.println(format(12,38));
         System.out.println("");
         System.out.println(format(24,38));
-        System.out.println("");
-        System.out.println( 24 %= 12);
     }
 }
