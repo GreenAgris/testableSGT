@@ -1,4 +1,6 @@
-package variables;
+package Homentask;
+
+import Homentask.Converter;
 
 public class ConverterDemo {
     public static void main(String[] args) {

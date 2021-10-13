@@ -1,4 +1,4 @@
-package conditionals;
+package Homentask;
 
 import java.util.Scanner;
 

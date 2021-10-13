@@ -1,4 +1,4 @@
-package conditionals;
+package Homentask;
 
 import util.Bird;
 import util.BirdRandomizer;

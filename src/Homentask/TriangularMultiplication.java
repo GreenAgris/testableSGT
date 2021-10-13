@@ -1,4 +1,4 @@
-package loops;
+package Homentask;
 
 public class TriangularMultiplication {
 

@@ -1,4 +1,4 @@
-package loops;
+package Homentask;
 
 import java.util.Arrays;
 
@@ -107,7 +107,7 @@ public class LoopsExamples {
                 }
             }
 
-            if (prime == true) {
+            if (prime) {
                 result = input[i];
                 break;
 
