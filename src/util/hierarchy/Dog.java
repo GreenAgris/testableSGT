@@ -1,5 +1,7 @@
 package util.hierarchy;
 
+// Created by Vija
+
 public class Dog extends Animal {
     String name;
     double height;
