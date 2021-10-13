@@ -34,10 +34,10 @@ public class StringFormattingExamplesTime {
         String pmOrAm = hour > 11 && hour < 24 ? "PM" : "AM";
 
         // trim "0-23 hour" to "0-11 hour", then replace "0" with "12"
-        hour = (hour %= 12) == 0 ? 12 : hour;
+        hour = (hour %= 12) == 0 ? 12 : hour; // hour is equal the reminder of hour divided to 12, if that is 0 - replace with 12
 
         // Apply desired format "HH:MM AM/PM"
-        return String.format("%02d:%02d %s", hour, minutes, pmOrAm );}
+        return String.format("%02d:%02d %s", hour, minutes, pmOrAm );} //%02d - format the integer with 2 digits, left padding it with zeroes
 
     public static void main(String[] args) {
 
@@ -63,5 +63,6 @@ public class StringFormattingExamplesTime {
         System.out.println("");
         System.out.println(format(24,38));
         System.out.println("");
+        System.out.println( 24 %= 12);
     }
 }
