@@ -1,4 +1,4 @@
-package loops;
+package Homentask;
 
 import java.util.Arrays;
 import java.util.Random;
