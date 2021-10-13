@@ -1,6 +1,6 @@
 package conditionals;
 
-import util.Bird;
+import util.hierarchy.Bird;
 import util.BirdRandomizer;
 
 public class BirdSelector {
@@ -8,6 +8,9 @@ public class BirdSelector {
     public static void main(String[] args) {
 
     Bird randomBird = BirdRandomizer.returnRandomBird();
+
+        randomBird.getAge();
+
 
         if (randomBird.getColour().equals("Black")){
         System.out.println("It should be an emu");

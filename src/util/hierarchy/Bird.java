@@ -1,6 +1,6 @@
-package util;
-
-public class Bird {
+package util.hierarchy;
+//created by Agris
+public class Bird extends Animal {
 
     double height;
     double wingSpan;
@@ -65,5 +65,10 @@ public class Bird {
 
     public void setColour(String colour) {
         this.colour = colour;
+    }
+
+    @Override
+    public String makeSound() {
+        return "Tweet";
     }
 }
