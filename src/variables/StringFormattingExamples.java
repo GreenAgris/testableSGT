@@ -17,7 +17,7 @@ public class StringFormattingExamples {
 
     // "some text at 2021-10-25T23:49 will be sent for our people, to remind that that next days meeting is moved to 10:30 and the planned party on 2021-10-31 is cancelled."
     // with the above input, print out in console following lines
-    // 2021-10-25T23:49
+    // 2021-10-25T23:49:12
     // 2021-10-31
     public static void findAndPrintDatesFromText(String input) {
 
