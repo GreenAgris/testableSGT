@@ -29,11 +29,11 @@ public class StringFormatting {
         // some String definitions to be used later in code.
         String shortText = "a and Z";
         String definition = "A pangram or holoalphabetic sentence is a sentence using every letter of a given alphabet at least once.";
-        String panagram1 = "The quick brown fox jumps over a lazy dog";
-        String panagram2 = "Sphinx of black quartz, judge my vow";
-        String panagram3 = "Pack my box with five dozen liquor jugs.";
-        String ultimatePanagram = "The beige hue on the waters of the loch impressed all, including the French queen, before she heard that symphony again, just as young Arthur wanted.";
 
+        String ultimatePanagram = "The beige hue on the waters of the loch impressed all, including the French queen, before she heard that symphony again, just as young Arthur wanted.";
+        System.out.println(shortText);
+        System.out.println(shortText.substring(2));
+        System.out.println(shortText.substring(2,4));
 
 
         System.out.println(shortText.length());//prints out the number of characters in the given string (spaces are characters)
@@ -46,7 +46,7 @@ public class StringFormatting {
         System.out.println(String.format("Be careful with large decimal numbers,"
             + " since the precision is still limited : %f , %.2f, %.16f", testDouble, testDouble, testDouble));
 
-        String[] names = {"Jānis", "Otto", "Kaspars", "Ieva", "Laima", "Anna"};
+        String[] names = {"         Jānis      ", "Kaspars", "Ieva ", "Laima ", "Anna"};
 
         for (String test : names) {
             System.out.println("Is " + test + " male name: " + isLatvianMaleName(test));
@@ -94,13 +94,15 @@ public class StringFormatting {
         // [a-zA-Z0-9_āī]+s$
         //   Pattern pattern = Pattern.compile("[a-zA-Z0-9_āī]+s$");
         // input.contains(pattern); // this will not work, since we are using a description not exact values for what we are searching for
+        // A Matcher is needed, so:
+        //  Matcher match = pattern.matcher(input); // this is an object that will find the places where regex is fulfilled
 
         // form presentation    if(bankIBAN.matches(regexPattern))
-        return input.matches("[a-zA-Z0-9_āī]+s$");
+        return input.strip().matches("[a-zA-Z0-9_āī]+s$");
     }
 
     public static boolean isLatvianFemaleName(String input) {
-        return input.matches("[a-zA-Z0-9_āī]+[ae]$");
+        return input.strip().matches("[a-zA-Z0-9_āī]+[ae]$");
     }
 
     public static int howManyWordsAreGiven(String input) {
@@ -115,7 +117,7 @@ public class StringFormatting {
 
     public static int howManyWordsAreGiven2(String input) {
         String[] arrayOfStrings = input.split(" ");
-        return arrayOfStrings.length - 1;
+        return arrayOfStrings.length+1;
     }
 
     public static int howManySpecificWordsAreGiven(String input, String searchable) {
