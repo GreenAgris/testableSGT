@@ -29,4 +29,9 @@ public class Dog extends Animal {
         return result;
 
     }
+
+    public static void main(String[] args) {
+        Dog dave = new Dog("Dave", 62,true,true,true,"brown");
+        System.out.println(dave.makeSound());
+    }
 }
