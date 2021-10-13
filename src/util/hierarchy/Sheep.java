@@ -2,7 +2,7 @@ package util.hierarchy;
 
 //created by Ausma
 
-public abstract class Sheep extends Animal {
+public class Sheep extends Animal {
 
 
     int fleeceLength;
@@ -44,6 +44,12 @@ public abstract class Sheep extends Animal {
 
     @Override
     public String makeSound(){
-        return "Beee..";
+        return "Baaahh..";
+    }
+
+    public static void main(String[] args) {
+        Sheep kay = new Sheep(12, 4, "White", true);
+        System.out.println(kay.makeSound());
+
     }
 }
