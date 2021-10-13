@@ -2,6 +2,7 @@ package util;
 
 import java.util.ArrayList;
 import java.util.List;
+import util.hierarchy.Bird;
 
 public class BirdRandomizer {
 

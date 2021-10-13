@@ -1,6 +1,6 @@
 package conditionals;
 
-import util.Bird;
+import util.hierarchy.Bird;
 import util.BirdRandomizer;
 
 public class BirdSelector {
