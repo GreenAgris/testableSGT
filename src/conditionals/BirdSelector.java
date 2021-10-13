@@ -9,6 +9,9 @@ public class BirdSelector {
 
     Bird randomBird = BirdRandomizer.returnRandomBird();
 
+        randomBird.getAge();
+
+
         if (randomBird.getColour().equals("Black")){
         System.out.println("It should be an emu");
     }else if (randomBird.getColour().equals("Black/White")){

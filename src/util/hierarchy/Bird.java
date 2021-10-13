@@ -1,5 +1,5 @@
 package util.hierarchy;
-
+//created by Agris
 public class Bird extends Animal {
 
     double height;
