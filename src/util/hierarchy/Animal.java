@@ -1,5 +1,6 @@
 package util.hierarchy;
 
+// created by Agris
 public abstract class Animal {
 
     int age;
