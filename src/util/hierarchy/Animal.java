@@ -7,6 +7,13 @@ public abstract class Animal {
     double weightInKG;
     String eyeColor;
 
+    Animal() {
+        age = 0;
+    }
+
+    Animal(int age){
+        this.age = age;
+    }
 
     public int getAge() {
         return age;
