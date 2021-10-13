@@ -10,8 +10,7 @@ public class OnlineQuestion {
 
     OnlineAnswer answer2 = new OnlineAnswer("text1", "text2");
 
-    OnlineAnswer answer = new OnlineAnswer
-        ("Some answered here", "TestUser","Aug 29 21 at 20:14");
+    OnlineAnswer answer = new OnlineAnswer("Some answered here", "TestUser","Aug 29 21 at 20:14");
 
     public void printOutContent(){
         System.out.println(text);

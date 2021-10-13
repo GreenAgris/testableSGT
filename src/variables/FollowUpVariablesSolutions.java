@@ -70,6 +70,11 @@ public class FollowUpVariablesSolutions {
         //heightInMeters
         System.out.println(heightInMeters + " meters = ");
         System.out.println(yards + " yards");
+
+
+
+        }
+
     }
 
-}
+

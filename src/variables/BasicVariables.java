@@ -17,6 +17,10 @@ public class BasicVariables {
         boolean truthOrFalsehood; // what is the value?
         boolean isShortEqualToInt = wholeNumber == shortNumber; // == means is it equal, used only for primitive variables
 
+        int sum = 50 + 25;
+
+        System.out.println( sum );
+
         truthOrFalsehood = wholeNumber > otherNumber; // true
         var test234Name = shortNumber + wholeNumber;
         System.out.println(namedChar + test234Name); // %246
