@@ -29,9 +29,18 @@ public class StringFormattingExamplesTime {
 // SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
         return Time;
     }
+    public static String format(int hour, int minutes){
+        System.out.print(hour+ "," + minutes + " in AM/PM format: ");
+        String pmOrAm = hour > 11 && hour < 24 ? "PM" : "AM";
 
+        // trim "0-23 hour" to "0-11 hour", then replace "0" with "12"
+        hour = (hour %= 12) == 0 ? 12 : hour;
+
+        // Apply desired format "HH:MM AM/PM"
+        return String.format("%02d:%02d %s", hour, minutes, pmOrAm );}
 
     public static void main(String[] args) {
+
         System.out.println(americanStyleTimeString(99, 44));
         System.out.println("");
         System.out.println(americanStyleTimeString(00, 44));
@@ -45,6 +54,14 @@ public class StringFormattingExamplesTime {
         System.out.println(americanStyleTimeString(15, 44));
         System.out.println("");
         System.out.println(americanStyleTimeString(24, 44));
+        System.out.println("");
+        System.out.println(format(0,38));
+        System.out.println("");
+        System.out.println(format(9,38));
+        System.out.println("");
+        System.out.println(format(12,38));
+        System.out.println("");
+        System.out.println(format(24,38));
         System.out.println("");
     }
 }
