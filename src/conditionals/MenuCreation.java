@@ -10,9 +10,18 @@ public class MenuCreation {
         System.out.println("Hello! please enter the current week day for a good luck quote!");
         System.out.println(returnQuoteBasedOnDay(scanner.nextLine()));
 
-        System.out.println("What is the current month?");
-        System.out.println(returnInfoBasedOnMonth(scanner.nextLine()));
+        /* Or you might have written this as follows.
+        First create a variable called 'input' of a String data type:
+           String input = returnQuoteBasedOnDay(scanner.nextLine());
+        Then print out the input:
+           System.out.println(input);
+         */
 
+        /* Do not call these lines because there is nothing there yet:
+
+       System.out.println("What is the current month?");
+       System.out.println(returnInfoBasedOnMonth(scanner.nextLine()));
+       */
     }
 
     private static String returnInfoBasedOnMonth(String nextLine) {

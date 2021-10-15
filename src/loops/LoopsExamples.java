@@ -3,8 +3,6 @@ package loops;
 public class LoopsExamples {
 
     static int[] intArray = {16, 20, 21, 23, 23, 12, 71};
-
-
     static String[] exampleText = new String[]{"seastar", "Patrick", "Patrick seastar", "Omnitricks", "Omnibus", "Stellaris"};
 
     public static void main(String[] args) {
@@ -22,11 +20,25 @@ public class LoopsExamples {
 
 
     public static int findLargest(int[] input) {
-        return -1;
+        int theLargest = 0;
+        for (int i = 0; i < input.length; i++) {
+            if (theLargest < input[0]) {
+                theLargest = input[0];
+            }
+            System.out.println("The largest number in the array is " + theLargest);
+        }
+        return theLargest;
     }
 
     public static int multiplyOnlyEvenNumbers(int[] input) {
-        return -1;
+        int multiplyNumbers = 1;
+        for (int i = 0; i < input.length; i++) {
+            if (input[i] % 2 == 0) {
+                multiplyNumbers = multiplyNumbers * intArray[i];
+            }
+            System.out.println("Multiplication of the even numbers in the array equals " + multiplyNumbers);
+        }
+        return multiplyNumbers;
     }
 
     //Advanced exercises

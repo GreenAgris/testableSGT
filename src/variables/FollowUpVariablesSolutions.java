@@ -14,9 +14,11 @@ public class FollowUpVariablesSolutions {
 
         double growthMetric = 12.3, heightInMeters= 12.3, averageAge = 45.7;
 
-        // ALWAYS the name is on the left side of the value declaration. We can not do as in math 32 = f, because in Java that won't make any sense!
+        // ALWAYS the name is on the left side of the value declaration.
+        // We can not do as in math 32 = f, because in Java that won't make any sense!
         float f1 = 32e3f;
-        // even if we want to add some values or Initialize the variables on declaration, it is possible, if they are the same type!
+        // even if we want to add some values or Initialize the variables on declaration,
+        // it is possible, if they are the same type!
         double d1 = 314E2d, d2 = 5.8E6d;
 
         System.out.println(RED + f1);
@@ -54,7 +56,9 @@ public class FollowUpVariablesSolutions {
         System.out.println("next fraction should be 98! : " + (int)( minutes * 100.0 / 60 )); // 98.333333
 
         // TODO task 5: create a conversion from cm to inches (already given as an example) , cm to foot. Meters to yards.
-        // ! create any new variables that you need and choose names that are clear for them ! You can use https://en.wikipedia.org/wiki/Imperial_units#Length as a source of conversion numbers
+        // ! create any new variables that you need and choose names that are clear for them !
+        // You can use https://en.wikipedia.org/wiki/Imperial_units#Length as a source of conversion numbers
+
         System.out.println(WHITE_BOLD + " ---  Task About Conversion of units Start Here    ---- ");
 
         int inch = 1; // for testing you can change the values as needed
@@ -66,8 +70,7 @@ public class FollowUpVariablesSolutions {
         double ft = cm / 30.48;
         System.out.println(cm + " cm = ");
         System.out.println(ft + " ft");
-        double yards = 0.9144 * heightInMeters;
-        //heightInMeters
+        double yards = heightInMeters / 0.9144; // te bija rakstīts '0.9144 * heightInMeters' but it doesn't make sense
         System.out.println(heightInMeters + " meters = ");
         System.out.println(yards + " yards");
     }
