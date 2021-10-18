@@ -28,6 +28,7 @@ public class SomeClassIntroduction {
         zoo.add(cat);
         zoo.add(dog);
         zoo.add(sheep);
+        zoo.add(frog);
 
         System.out.println("**************");
         System.out.println(Arrays.toString(zoo.toArray()));
@@ -48,6 +49,7 @@ public class SomeClassIntroduction {
         rivalZoo.put("Felix", cat);
         rivalZoo.put("Barky", dog);
         rivalZoo.put("Molly", sheep);
+        rivalZoo.put("Fernand",frog);
 
         System.out.println(rivalZoo.size());
 
