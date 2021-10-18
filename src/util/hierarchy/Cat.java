@@ -41,4 +41,13 @@ public class Cat extends Animal{
     public String makeSound() {
         return "Meowww...";
     }
+
+    @Override
+    public String toString() {
+        return "Cat {" +
+                "isDomesticated=" + isDomesticated +
+                ", breed: " + breed +
+                ", furColour: " + furColour +
+                '}';
+    }
 }
