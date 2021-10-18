@@ -6,6 +6,7 @@ public abstract class Animal {
     int age;
     double weightInKG;
     String eyeColor;
+    protected int numberOfLegs;
 
     Animal() {
         age = 0;

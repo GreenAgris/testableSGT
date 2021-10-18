@@ -2,6 +2,8 @@ package util.hierarchy;
 
 // Created by Vija
 
+import java.util.StringJoiner;
+
 public class Dog extends Animal {
     String name;
     double height;
@@ -19,6 +21,14 @@ public class Dog extends Animal {
         this.colour = colour;
     }
 
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", Dog.class.getSimpleName() + "[", "]")
+                .add("name='" + name + "'")
+                .add("height=" + height)
+                .add("canRun=" + canRun)
+                .toString();
+    }
 
     @Override
     public String makeSound() {
@@ -34,4 +44,6 @@ public class Dog extends Animal {
         Dog dave = new Dog("Dave", 62,true,true,true,"brown");
         System.out.println(dave.makeSound());
     }
+
+
 }
