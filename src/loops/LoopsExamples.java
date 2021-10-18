@@ -1,4 +1,4 @@
-package Homentask;
+package loops;
 
 import java.util.Arrays;
 

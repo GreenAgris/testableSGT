@@ -1,4 +1,4 @@
-package Homentask;
+package hometask;
 
 public class StringFormattingExamplesTime {
 
