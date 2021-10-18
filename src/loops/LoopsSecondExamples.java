@@ -19,6 +19,13 @@ public class LoopsSecondExamples {
     // 3 = 2
     // 4 = 3
 
+    // function as :
+    // * starting point, steps
+    // where n1 = 1
+    // n2 = 1
+    // while ( n < given limit):
+    // nx = nx-1 + nx-2
+
 
     public static void findFibonacciNumbers(int max) {
         int first = 1;

@@ -91,7 +91,7 @@ public class StringFormatting {
 
     //place for live examples
     public static boolean isLatvianMaleName(String input) {
-        // [a-zA-Z0-9_āī]+s$
+        // [a-zA-Z0-9_ā0ī]+s$
         //   Pattern pattern = Pattern.compile("[a-zA-Z0-9_āī]+s$");
         // input.contains(pattern); // this will not work, since we are using a description not exact values for what we are searching for
         // A Matcher is needed, so:

@@ -1,14 +1,10 @@
 package introduction;
 
+import util.hierarchy.*;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import util.hierarchy.Animal;
-import util.hierarchy.Bird;
-import util.hierarchy.Cat;
-import util.hierarchy.Dog;
-import util.hierarchy.Penguin;
-import util.hierarchy.Sheep;
 
 public class SomeClassIntroduction {
 
@@ -27,7 +23,10 @@ public class SomeClassIntroduction {
         zoo.add(dog);
         zoo.add(sheep);
 
-      //  System.out.println(Arrays.toString(zoo.toArray()));
+        System.out.println("**************");
+        System.out.println(Arrays.toString(zoo.toArray()));
+        System.out.println("**************");
+
 
         System.out.println(zoo.size());
 
