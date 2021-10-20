@@ -1,7 +1,7 @@
 package hometask;
+// SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
 
 public class StringFormattingExamplesTime {
-
     // given hours and minutes in standard 24h values, return a formatted string that returns the same time in AM/PM format :
     //input 23, 43 -> 11:43 PM
     //input 2,20 ->   02:20 AM
@@ -26,9 +26,10 @@ public class StringFormattingExamplesTime {
                 Time = ( "Time in AM/PM format: " + ( hour - 12 ) + ":" + minute + " PM" );
             }
         }
-// SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
         return Time;
     }
+
+
     public static String format(int hour, int minutes){
         System.out.print(hour+ "," + minutes + " in AM/PM format: ");
         String pmOrAm = hour > 11 && hour < 24 ? "PM" : "AM";
@@ -38,6 +39,7 @@ public class StringFormattingExamplesTime {
 
         // Apply desired format "HH:MM AM/PM"
         return String.format("%02d:%02d %s", hour, minutes, pmOrAm );} //%02d - format the integer with 2 digits, left padding it with zeroes
+
 
     public static void main(String[] args) {
 
