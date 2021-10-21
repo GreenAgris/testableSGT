@@ -44,7 +44,7 @@ public class StringFormatting {
         System.out.println(testable.equalsIgnoreCase(bigTestable));
         double testDouble = 123456789.123456789;
         System.out.println(String.format("Be careful with large decimal numbers,"
-            + " since the precision is still limited : %f , %.2f, %.16f", testDouble, testDouble, testDouble));
+                + " since the precision is still limited : %f , %.2f, %.16f", testDouble, testDouble, testDouble));
 
         String[] names = {"         Jānis      ", "Kaspars", "Ieva ", "Laima ", "Anna"};
 
@@ -55,16 +55,16 @@ public class StringFormatting {
         }
 
         String testText =
-            "Regular expressions originated in 1951, when mathematician Stephen Cole Kleene described regular"
-                + " languages using his mathematical notation called regular events. These arose in theoretical "
-                + "computer science, in the subfields of automata theory (models of computation) and the description "
-                + "and classification of "
-                + "formal languages. Other early implementations of pattern matching include the SNOBOL language,"
-                + " which did not use regular expressions, but instead its own pattern matching constructs."
-                + "Regular expressions entered popular use from 1968 in two uses: pattern matching in a text editor[6]"
-                + " and lexical analysis in a compiler.[7] Among the first appearances of regular expressions in program "
-                + "form was when Ken Thompson built Kleene's notation into the editor QED as a means"
-                + " to match patterns in text files.";
+                "Regular expressions originated in 1951, when mathematician Stephen Cole Kleene described regular"
+                        + " languages using his mathematical notation called regular events. These arose in theoretical "
+                        + "computer science, in the subfields of automata theory (models of computation) and the description "
+                        + "and classification of "
+                        + "formal languages. Other early implementations of pattern matching include the SNOBOL language,"
+                        + " which did not use regular expressions, but instead its own pattern matching constructs."
+                        + "Regular expressions entered popular use from 1968 in two uses: pattern matching in a text editor[6]"
+                        + " and lexical analysis in a compiler.[7] Among the first appearances of regular expressions in program "
+                        + "form was when Ken Thompson built Kleene's notation into the editor QED as a means"
+                        + " to match patterns in text files.";
 
         System.out.println("Test text has words: " + howManyWordsAreGiven(testText));
         System.out.println("2Test text has words: " + howManyWordsAreGiven2(testText));
@@ -139,8 +139,8 @@ public class StringFormatting {
 
         System.out.println(String.format("Most know %c as %.3f", piChar, Math.PI));
         System.out.println(String.format(
-            "But since %c is a mathematical constant that is actually not a whole number, it has unending digits after the decimal point,since it is not practical to use an unending number, the calculations usually use the value as %f .",
-            piChar, Math.PI));
+                "But since %c is a mathematical constant that is actually not a whole number, it has unending digits after the decimal point,since it is not practical to use an unending number, the calculations usually use the value as %f .",
+                piChar, Math.PI));
     }
 
 
