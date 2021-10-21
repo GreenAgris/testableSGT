@@ -1,4 +1,4 @@
-package hometask;
+package Hometask;
 
 public class TriangularMultiplication {
 

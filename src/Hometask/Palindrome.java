@@ -1,4 +1,4 @@
-package hometask;
+package Hometask;
 
 public class Palindrome {
     /*A word is a palindrome if it can be read the same both forward and backward.

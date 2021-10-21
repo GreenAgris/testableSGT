@@ -1,6 +1,4 @@
-package hometask;
-
-import variables.StringFormatting;
+package Hometask;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

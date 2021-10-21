@@ -1,4 +1,4 @@
-package hometask;
+package Hometask;
 // SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
 
 public class StringFormattingExamplesTime {

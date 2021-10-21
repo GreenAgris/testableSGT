@@ -1,4 +1,4 @@
-package hometask;
+package Hometask;
 
 import util.hierarchy.Bird;
 import util.BirdRandomizer;
