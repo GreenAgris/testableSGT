@@ -1,6 +1,12 @@
 package util.hierarchy;
 
 // Created by Vija
+//CREATE TABLE Dog (
+//	name TEXT NOT NULL,
+//	height INTEGER DEFAULT 62 NOT NULL,
+//	canRun NUMERIC DEFAULT 1,
+//	id INTEGER PRIMARY KEY AUTOINCREMENT
+//);
 
 import java.util.StringJoiner;
 
