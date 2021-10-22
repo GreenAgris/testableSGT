@@ -10,9 +10,9 @@ public class StringFormattingExamplesTime {
         System.out.println("Given hours and minutes are: " + hour + ", " + minute);
         String Time = "You entered incorrect numbers!!!";
 
-        if (( ( hour >= 0 && hour <= 9 ) || ( hour == 24 ) ) && minute >= 0 && minute < 60) {
-            if (hour == 0 || hour == 24) {
-                Time = ( "Time in AM/PM format: " + ( 12 ) + ":" + minute + " AM" );
+        if (( ( hour >= 0 && hour <= 9 ) || ( hour == 12 ) || ( hour == 24 ) ) && minute >= 0 && minute < 60) {
+            if ((hour == 12)  || (hour == 24)) {
+                Time = ( "Time in AM/PM format: " + "00" + ":" + minute + " AM" );
             } else {
                 Time = ( "Time in AM/PM format: " + "0" + hour + ":" + minute + " AM" );
             }
@@ -36,7 +36,7 @@ public class StringFormattingExamplesTime {
         String pmOrAm = hour > 11 && hour < 24 ? "PM" : "AM";
 
         // trim "0-23 hour" to "0-11 hour", then replace "0" with "12"
-        hour = (hour %= 12) == 0 ? 12 : hour; // hour is equal the reminder of hour divided to 12, if that is 0 - replace with 12
+        hour = (hour %= 12); //  == 0 ? 12 : hour; hour is equal the reminder of hour divided to 12, if that is 0 - replace with 12
 
         // Apply desired format "HH:MM AM/PM"
         return String.format("%02d:%02d %s", hour, minutes, pmOrAm );} //%02d - format the integer with 2 digits, left padding it with zeroes
