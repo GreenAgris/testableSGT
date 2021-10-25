@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import util.hierarchy.Animal;
+import util.hierarchy.Beaver;
 import util.hierarchy.Bird;
 import util.hierarchy.Cat;
 import util.hierarchy.Dog;
@@ -22,6 +23,7 @@ public class SomeClassIntroduction {
         Dog dog = new Dog("Dave", 62, true, true, true, "brown");
         Sheep sheep = new Sheep(3, 30.0, "White", true);
         Frog frog = new Frog(true, true, "Light-Green");
+        Beaver bev = new Beaver(2,true, "red", 4);
 
         zoo.add(bird);
         zoo.add(penguin);
@@ -29,6 +31,7 @@ public class SomeClassIntroduction {
         zoo.add(dog);
         zoo.add(sheep);
         zoo.add(frog);
+        zoo.add(bev);
 
         System.out.println("**************");
         System.out.println(Arrays.toString(zoo.toArray()));
@@ -56,6 +59,12 @@ public class SomeClassIntroduction {
         for (String key : rivalZoo.keySet()) {
             System.out.println(rivalZoo.get(key) + "    " + rivalZoo.get(key).makeSound());
         }
+
+
+        DatabasesIntroduction.saveBeaver(bev);
+
+
+
     }
 }
 
