@@ -33,6 +33,11 @@ public class DatabasesIntroduction {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+
+        //UPDATE Birds SET age = 6  WHERE name='Penguin' OR name = 'Emu';
+        //
+        //DELETE FROM Birds WHERE eyeColor ISNULL ;
+        //
     }
 
     public static void saveBeaver(Beaver bev) {
