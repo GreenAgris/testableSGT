@@ -49,7 +49,7 @@ public class DatabasesIntroduction {
                 statement.execute(
                 "INSERT INTO Animals ( age, eyeColour) VALUES( " + bev.getAge() + ", '" + bev.getEyeColor() + "');");
             //beaver second
-            String queryLastRowInserted = "SELECT last_insert_rowid() AS id";
+            String queryLastRowInserted = "SELECT last_insert_rowid() AS id;";
             statement.execute(queryLastRowInserted);
             ResultSet rs = statement.getResultSet();
             rs.next();
