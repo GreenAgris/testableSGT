@@ -23,8 +23,8 @@ public class DBIntroDog {
 
 
             statement.execute("INSERT INTO Dog ( lengthForTeeth, colourOfFur, hasADam, animalID) VALUES( "
-                    + dog.getName() + ", '"  + dog.getHeight() + ", '" + (dog.isCanRun() ? 1 : 0) + ", '"
-                    + (dog.isCanSwim() ? 1 : 0) + ", '"  + (dog.isCanBite() ? 1 : 0) + ", '"  + dog.getColour() + ", '"  + generatedID + ");");
+                   + "'" + dog.getName() + "', "  + dog.getHeight() + ", " + (dog.isCanRun() ? 1 : 0) + ", "
+                    + (dog.isCanSwim() ? 1 : 0) + ", "  + (dog.isCanBite() ? 1 : 0) + ", '"  + dog.getColour() + "', "  + generatedID + ");");
 
             statement.close();
 
