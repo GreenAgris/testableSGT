@@ -1,14 +1,14 @@
 package util.hierarchy;
 
 // Created by Vija
-//  CREATE TABLE Dog (
+// CREATE TABLE Dogs (
 //	name TEXT NOT NULL,
-//	height INTEGER DEFAULT 62 NOT NULL,
-//	canRun NUMERIC DEFAULT 1,
-//	id INTEGER PRIMARY KEY AUTOINCREMENT
-//  colour TEXT DEFAULT brown
-//  canBite NUMERIC DEFAULT 0 NOT NULL
-//  canSwim NUMERIC NOT NULL
+//	height INTEGER NOT NULL,
+//	canRun NUMERIC DEFAULT 1 NOT NULL,
+//	canSwim NUMERIC DEFAULT 1,
+//	canBite NUMERIC DEFAULT 0 NOT NULL,
+//	colour TEXT,
+//	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT
 //);
 
 import java.util.StringJoiner;
@@ -27,6 +27,54 @@ public class Dog extends Animal {
         this.canRun = canRun;
         this.canSwim = canSwim;
         this.canBite = canBite;
+        this.colour = colour;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public boolean isCanRun() {
+        return canRun;
+    }
+
+    public void setCanRun(boolean canRun) {
+        this.canRun = canRun;
+    }
+
+    public boolean isCanSwim() {
+        return canSwim;
+    }
+
+    public void setCanSwim(boolean canSwim) {
+        this.canSwim = canSwim;
+    }
+
+    public boolean isCanBite() {
+        return canBite;
+    }
+
+    public void setCanBite(boolean canBite) {
+        this.canBite = canBite;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
         this.colour = colour;
     }
 
