@@ -21,6 +21,16 @@ public class Dog extends Animal {
     boolean canBite;
     String colour;
 
+    public Dog(int age, String name, double height, boolean canRun, boolean canSwim, boolean canBite, String colour) {
+        super(age);
+        this.name = name;
+        this.height = height;
+        this.canRun = canRun;
+        this.canSwim = canSwim;
+        this.canBite = canBite;
+        this.colour = colour;
+    }
+
     public Dog(String name, double height, boolean canRun, boolean canSwim, boolean canBite, String colour) {
         this.name = name;
         this.height = height;
