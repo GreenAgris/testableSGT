@@ -20,7 +20,7 @@ public class SomeClassIntroduction {
         Bird bird = new Bird(1.5, 1.44, false, false, "Black");
         Penguin penguin = new Penguin(0.35, 0.44, false, true, "Black/White", 32.0);
         Cat cat = new Cat(true, "Tabby", "mixed");
-        Dog dog = new Dog("Dave", 62, true, true, true, "brown");
+        Dog dog = new Dog(7,"Dave", 62, true, true, true, "brown");
         Sheep sheep = new Sheep(3, 30.0, "White", true);
         Frog frog = new Frog(true, true, "Light-Green");
         Beaver bev = new Beaver(2,true, "red", 4);
