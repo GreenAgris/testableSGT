@@ -6,7 +6,7 @@ import util.hierarchy.Dog;
 import java.sql.*;
 
 public class DBIntroDog {
-    public static void saveBeaver(Dog dog) {
+    public static void saveDog(Dog dog) {
         try {
             Connection connection = DriverManager.getConnection("jdbc:sqlite:/Users/37126/SQLITE3/zoo-v.db");
             Statement statement = connection.createStatement();
