@@ -22,7 +22,7 @@ public class DBIntroDog {
             int generatedID = rs.getInt("id");
 
 
-            statement.execute("INSERT INTO Dog ( lengthForTeeth, colourOfFur, hasADam, animalID) VALUES( "
+            statement.execute("INSERT INTO Dog ( name, height, colourOfFur, canRun, canSwim, canBite, colour, animalID) VALUES( "
                    + "'" + dog.getName() + "', "  + dog.getHeight() + ", " + (dog.isCanRun() ? 1 : 0) + ", "
                     + (dog.isCanSwim() ? 1 : 0) + ", "  + (dog.isCanBite() ? 1 : 0) + ", '"  + dog.getColour() + "', "  + generatedID + ");");
 
