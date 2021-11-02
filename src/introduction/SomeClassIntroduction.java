@@ -62,6 +62,7 @@ public class SomeClassIntroduction {
 
 
         DatabasesIntroduction.saveBeaver(bev);
+        DBIntroDog.saveDog(dog);
 
 
 

@@ -42,7 +42,7 @@ public class DatabasesIntroduction {
 
     public static void saveBeaver(Beaver bev) {
         try {
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:/Users/agris.traskovs/code/testableSGT/sql/zoo.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:/Users/37126/SQLITE3/zoo-v.db");
             Statement statement = connection.createStatement();
             //animal first
             //int generatedID =
