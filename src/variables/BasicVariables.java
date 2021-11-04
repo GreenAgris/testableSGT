@@ -7,6 +7,8 @@ public class BasicVariables {
         int wholeNumber = 123;
         int otherNumber = 13;
 
+       // int wholeNumber = 123;
+        //int otherNumber = 13;
         short shortNumber = 123;
 
         float complexNumber = 56.7f;
@@ -15,10 +17,17 @@ public class BasicVariables {
         boolean truthOrFalsehood; // what is the value?
         boolean isShortEqualToInt = wholeNumber == shortNumber; // == means is it equal, used only for primitive variables
 
+        int sum = 50 + 25;
+
+        System.out.println( sum );
+
         truthOrFalsehood = wholeNumber > otherNumber; // true
         var test234Name = shortNumber + wholeNumber;
         System.out.println(namedChar + test234Name); // %246
         System.out.println("" + namedChar + test234Name);
+
+        System.out.println(1 + 2 + "Hello"); // the output is 3Hello
+        System.out.println("Hello" + 1 + 2); // the output is Hello12
         System.out.println(namedChar + (complexNumber + complexDoubleNumber));
         //    System.out.println( truthOrFalsehood + isShortEqualToInt); // this makes no sense, don't do that :)
         System.out.println(" whole number result : " + wholeNumber);
