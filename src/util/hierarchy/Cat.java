@@ -3,6 +3,14 @@ package util.hierarchy;
 public class Cat extends Animal{
     //created by Everita
 
+/*   CREATE TABLE Cat (
+            isDomesticated NUMERIC DEFAULT 1 NOT NULL,
+            breed TEXT(15),
+            furColour REAL DEFAULT brown,
+            ID INTEGER PRIMARY KEY AUTOINCREMENT
+//);
+ */
+
     private boolean isDomesticated;
     private String breed;
     private String furColour;
