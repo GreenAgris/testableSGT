@@ -21,7 +21,7 @@ CREATE UNIQUE INDEX Animals_id_uindex
 CREATE TABLE Beaver
 (
     lengthForTeeth INTEGER NOT NULL,
-    colourOfFur    TEXT    DEFAULT Brown,
+    colourOfFur    TEXT    DEFAULT 'Brown',
     hasADam        NUMERIC DEFAULT 0 NOT NULL,
     id             INTEGER PRIMARY KEY AUTOINCREMENT,
     animalID       INTEGER NOT NULL
@@ -35,6 +35,25 @@ CREATE TABLE Birds
     name     TEXT    NOT NULL,
     age      int default 0,
     eyeColor text
+);
+
+CREATE TABLE Cat
+(
+    isDomesticated NUMERIC DEFAULT 1 NOT NULL,
+    breed          TEXT(15),
+    furColour      REAL    DEFAULT 'brown',
+    ID             INTEGER PRIMARY KEY AUTOINCREMENT
+);
+
+CREATE TABLE Dog
+(
+    name    TEXT    NOT NULL,
+    height  INTEGER DEFAULT 62 NOT NULL,
+    canRun  NUMERIC DEFAULT 1,
+    id      INTEGER PRIMARY KEY AUTOINCREMENT,
+    colour  TEXT    DEFAULT 'brown',
+    canBite NUMERIC DEFAULT 0 NOT NULL,
+    canSwim NUMERIC NOT NULL
 );
 
 INSERT INTO Animals (id, age, eyeColour, numberOfLegs, weightInKG, test12)
@@ -55,4 +74,4 @@ VALUES (1, 'Penguin', 6, 'black'),
        (5, 'Duck', 4, 'brown'),
        (7, 'Goose', 2, 'black'),
        (8, 'Goose', 2, 'brown'),
-       (9, 'Pidgeon', 10, 'black');
+       (9, 'Pigeon', 10, 'black');
